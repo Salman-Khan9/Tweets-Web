@@ -1,7 +1,7 @@
 import axios from 'axios'
 import "../ViewTweet/ViewTweet.css"
 import React, { useEffect, useState } from 'react'
-import { NavLink, useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
 const ViewTweet = () => {
   const {id} =  useParams()
   const [tweet, settweet] = useState({})
@@ -16,7 +16,6 @@ console.log(res.data)
   
   return (
     <div className='singletweet'>
-        <NavLink to="/">Home</NavLink>
     <div className='singletweetbody'>
         <div className='singletitle' >{tweet.title}</div>
         <div className='singledescription' >{tweet.description}</div>

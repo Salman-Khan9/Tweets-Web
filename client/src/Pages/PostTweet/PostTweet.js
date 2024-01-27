@@ -1,7 +1,6 @@
 import axios from 'axios'
 import "../PostTweet/PostTweet.css"
 import React, {  useState } from 'react'
-import { NavLink } from 'react-router-dom'
 const PostTweet = () => {
 const initialvalue={
   title:"",
@@ -31,7 +30,6 @@ const data ={
   return (
     <div className='post'>
       <div >
-        <div ><NavLink to="/">Home</NavLink></div>
       <div className='fields'> <input className='inputs' name='title'  value={title} placeholder='Title' onChange={onchange}  />
         <input className='inputs' name='description' value={description} placeholder='Description' onChange={onchange}  />
         <input className='inputs' name='username' value={username} placeholder='Your Name' onChange={onchange}  />

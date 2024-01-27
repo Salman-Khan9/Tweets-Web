@@ -1,0 +1,21 @@
+
+a:-webkit-any-link{
+    text-decoration: none !important;
+    color: white;
+
+}
+.menu{
+    display: flex;
+    background-color: rgb(116, 116, 233);
+    
+}
+.home{
+padding-left: 5px;padding-right: 5px; padding-top: 5px; padding-bottom: 5px; margin: 3px;
+font-size: larger;
+font-weight: 600;
+}
+.createtweet{
+    padding-left: 5px;    padding-right: 5px; padding-top: 5px; padding-bottom: 5px; margin: 3px;
+    font-size: larger;
+    font-weight: 600;
+}

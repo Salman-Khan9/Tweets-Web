@@ -30,10 +30,13 @@ const data ={
   return (
     <div className='post'>
       <div >
-      <div className='fields'> <input className='inputs' name='title'  value={title} placeholder='Title' onChange={onchange}  />
-        <input className='inputs' name='description' value={description} placeholder='Description' onChange={onchange}  />
-        <input className='inputs' name='username' value={username} placeholder='Your Name' onChange={onchange}  />
-        <button className='inputs' onClick={onclicksubmit}>Submit</button></div>
+      <form>
+      <div className='fields'>
+       <label>Title:</label> <input className='inputs' name='title'  value={title} placeholder='Title' onChange={onchange}  />
+      <label>Description:</label> <input className='inputs' name='description' value={description} placeholder='Description' onChange={onchange}  />
+      <label>User-Name:</label> <input className='inputs' name='username' value={username} placeholder='Your Name' onChange={onchange}  />
+      <button className='inputs' onClick={onclicksubmit}>Submit</button></div></form>
+        
       </div>
     </div>
   )
